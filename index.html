@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+   <meta name="robots" content="index, follow">
+   <meta name="theme-color" content="#FF0000">
+   <meta property="og:title" content="Práctica de Html">
+   <link rel="icon" href="wp12808376.png">
+  <title>Practicando en Html</title>
+</head>
+
+<body>
+   <main>  
+    <form method="post" action="/Google.php"
+    style="width: 400px;">
+
+      <fieldset class="fieldset-1">
+        <legend>!INFORMACIÓN PERSONAL¡</legend>
+ 
+          <div>
+           <label class="label-nombre" for="nombre">Nombre:
+             <input 
+              type="text"
+              id="nombre" 
+              placeholder="Ingrese su nombre">
+           </label>
+          </div>
+
+          <div>
+            <label class="label-contraseña" for="contraseña">Contraseña:
+             <input 
+              type="text"
+              id="contraseña" 
+              placeholder="Ingrese su contraseña">
+           </label>
+          </div>
+
+      </fieldset>
+
+      <fieldset class="fieldset-2">
+         <legend>!INFORMACIÓN ADICIONAL¡</legend>
+             
+         <div>
+           <label class="label-email" for="email"><span class="correo">Correo Electrónico:</span>
+            <input type="email" name="email" id="email" placeholder="pepito@gmail.com">
+          </label>
+         </div>
+
+          <div>
+            <label class="label-teléfono" for="teléfono">Teléfono:
+              <input 
+              type="tel"
+              id="teléfono"
+              required
+              pattern="[0-9]{9}"
+              placeholder="+51, +52, +591.............">
+            </label>
+          </div>  
+
+      </fieldset>
+
+      <fieldset class="fieldset-3">
+         <legend>Otros</legend>
+            
+          <div>
+            <label for="why">¿Por qué motivos deseas contactarnos?</label>
+             <select name="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Soporte</option>
+                    <option value="3">Otros</option>
+              </select>
+          </div>
+
+          <div>
+            <label for="country">País:</label>
+             <select name="country" id="country">
+               <option value="pe">Perú</option>
+               <option value="mx">México</option>
+               <option value="bo">Bolivia</option>
+               <option value="br">Brasil</option>
+               <option value="cl">Chile</option>
+               <option value="ec">Ecuador</option>
+               <option value="us">Estados Unidos</option>
+               <option value="ve">Venezuela</option>
+               <option value="uy">Uruguay</option>
+               <option value="ca">Canadá</option>
+              </select>
+          </div>
+
+          <div>
+            <label for="terms">¿Aceptas los términos y condiciones?</label>
+            <input type="checkbox" name="terms" id="terms" required>
+          </div>
+
+          <div>
+            <datalist id="languages">
+              <option value="JavaScript"></option>
+              <option value="Html5"></option>
+              <option value="Css3"></option>
+              <option value="Python"></option>
+            </datalist>
+        
+              <label>¿Cuá es el lenguaje que deseas aprender?
+                <input list="languages">
+             </label>
+         </div>
+
+      </fieldset>
+
+    </form>
+
+        <section>
+
+             <h3>Preguntas frecuentes</h3>
+
+             <details>
+               <summary>¿Cuales son tus hobies, luego de temrinar de trabajar?</summary>
+                <p>Me dedico a mis proyectos personales como principiante en Frontend</p>
+             </details>
+            
+        </section>
+
+        <section>
+          
+             <details>
+               <summary>¿Qué estudios tienes?</summary>
+                <p>Estudie en la universida UTP ubicada en Perú(Lima)</p>
+             </details>
+            
+        </section>
+
+        <section>
+
+             <details>
+               <summary>¿De los lenguajes aprendidos en tus estudios,
+                cual es tu favorito y el que más dominas?</summary>
+                <p>Mi lenguaje favorito y que domino mejor es HTML5,<br>
+                  ya que este e sel principio de una página Web.
+                </p>
+             </details>
+            
+        </section>
+
+       
+        <section>
+          <footer>
+                 
+              <h3>Redes Sociales:</h3>
+
+                <ul>
+                  <li>Instagram</li>
+                  <li>Facebook</li>
+                  <li>TikTok</li>
+                  <li>YouTube</li>
+                </ul>
+
+            </footer>
+         </section>
+
+    </main>
+  </body>
+</html>
